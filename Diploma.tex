@@ -1,0 +1,85 @@
+\documentclass[a4paper, 14pt]{extarticle}
+%\usepackage[utf8]{inputenc}
+%\usepackage[english,russian]{babel}
+%\usepackage{indentfirst}
+
+%\usepackage{graphicx}
+%\usepackage{float}
+%\usepackage{wrapfig}
+%\graphicspath{{images/}}
+
+%\title{Электроника стенда по изучению сцинтилляционных кристаллов}
+%\author{Андреев Андрей\\Новосибирский Государствнный Университет}
+
+\input{sections/preamble.tex}
+\begin{document}
+%\maketitle
+%\newpage
+\input{sections/title.tex}
+
+\tableofcontents
+\thispagestyle{empty}
+\newpage
+
+\setcounter{page}{3}
+\section*{Введение}
+\addcontentsline{toc}{section}{Введение}
+    \input{sections/Introduction.tex}
+    \newpage
+
+\section{Эксперимент ATLAS}
+    \input{sections/atlas_experiment.tex}
+    \subsection{Калориметрическая система}
+    \input{subsections/calorimeter_system.tex}
+    \subsection{Считывающая электроника}
+    \input{subsections/reading_electonics.tex}
+    \newpage
+
+\section{Сигнальный процессор жидкоаргонового калориметра (LASP)}
+    \input{sections/lasp.tex}
+%    \subsection{Схема стенда}
+%    \input{subsections/Scheme_stand.tex}
+    \newpage
+
+%\section{Система на кристалле Xilinx Zynq-7000}
+%    \input{sections/ZYNQ.tex}
+%    \newpage
+
+\section{Цель и задачи работы}
+%    \input{subsections/Target_and_tasks.tex}
+    \newpage
+
+\section{Модуль конфигурируемой перестановки (Remap)}
+    \input{sections/remap.tex}
+%    \subsection{Процессорная система}
+%    \input{subsections/PS.tex}
+%    \subsection{Программируемая логика}
+%    \input{subsections/PL.tex}
+    \newpage
+
+\section{Модуль упаковки данных (Packer)}
+    \input{sections/packer.tex}
+\newpage
+
+%\section{Веб-сервер}
+%    \input{sections/Server.tex}
+%    \subsection{Серверная часть}
+%    \input{subsections/Server_part.tex}
+%    \subsection{Клиентская часть}
+%    \input{subsections/Client_part.tex}
+%    \newpage
+
+\section*{Заключение}
+\addcontentsline{toc}{section}{Заключение}
+    \input{sections/Conclusion.tex}
+    \newpage
+
+%\inputencoding{T2A}
+%\usepackage[koi8-r]{inputenc}
+%\bibliographystyle{utf8gost705u}
+\printbibliography
+%\printbibliography{sections/bibliography}
+%\inputencoding{utf8}
+
+\addcontentsline{toc}{section}{Список литературы}
+\end{document}
