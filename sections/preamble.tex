@@ -1,4 +1,4 @@
-%\usepackage[T2A]{fontenc}
+\usepackage[T2A]{fontenc}
 \usepackage[utf8]{inputenc}%включаем свою кодировку: koi8-r или utf8 в UNIX, cp1251 в Windows
 \usepackage[english,russian]{babel}%используем русский и английский языки с переносами
 \usepackage{amssymb,amsfonts,amsmath,mathtext,enumerate,float} %подключаем нужные пакеты расширений
@@ -40,8 +40,9 @@
 \reversemarginpar % Перенос заметок с правого поля на левое.
 \usepackage{hyperref}
 \usepackage{tabularx}
+\usepackage{amsmath}
 
-% Полезные типы колонок: колонки с выравниваем влево/по центру/справа 
+% Полезные типы колонок: колонки с выравниваем влево/по центру/справа
 % фиксированной ширины (как p{}, но не justify).
 \newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
